@@ -7,12 +7,12 @@ import java.util.Scanner;
 
 public class Cards {
 
-	public static final int YOU = 1;
-	public static final int COMPUTER = 2;
-	public static final int FLOOR = 3;
-	public static final int JOKERSCORE = 1;
-	public static final int NORMALSCORE = 1;
-	public static final int PISTISCORE = 10;
+	public static  int YOU = 1;
+	public static  int COMPUTER = 2;
+	public static  int FLOOR = 3;
+	public static  int JOKERSCORE = 1;
+	public static  int NORMALSCORE = 1;
+	public static int PISTISCORE = 10;
 	
 	
 	static ArrayList<String> Cardstock = new ArrayList<String>(52);
@@ -91,11 +91,19 @@ public class Cards {
 			Cardstock2.add(Cardstock.get(deger)); // o elemana erişir
 			Cardstock.remove(deger); // arreylisteki o elemanı siler
 			
+			
+		
+			
 		}
 		
 		System.out.println("First card desk:" + Cardstock);
 		System.out.println("Second card desk:"+Cardstock2);
-		
+	
+	
+		for (int i=0; i<26; i++) {
+			
+			Cardstock.add(Cardstock2.get(i));
+		}
 		
 	}
 	
