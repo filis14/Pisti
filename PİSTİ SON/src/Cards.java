@@ -7,11 +7,11 @@ import java.util.Scanner;
 
 public class Cards {
 
-	public static  int YOU = 1;
-	public static  int COMPUTER = 2;
-	public static  int FLOOR = 3;
-	public static  int JOKERSCORE = 1;
-	public static  int NORMALSCORE = 1;
+	public static int YOU = 1;
+	public static int COMPUTER = 2;
+	public static int FLOOR = 3;
+	public static int JOKERSCORE = 1;
+	public static int NORMALSCORE = 1;
 	public static int PISTISCORE = 10;
 	
 	
@@ -73,12 +73,29 @@ public class Cards {
 		Cardstock.add("Maca-Q");
 		Cardstock.add("Maca-K");
 		
-	
-		Collections.shuffle(Cardstock); //shuffle sız dene
-		
-		
 		
 	}
+
+	public static void shuffle() {
+
+	 Random r = new Random();
+		 
+		 for(int i=0; i<Cardstock.size(); i++) {
+			 
+			int a = r.nextInt(Cardstock.size());
+			String temp = Cardstock.get(i);
+			Cardstock.set(a,temp);
+			
+		 }
+		
+		System.out.println("Shuffled cards:"+Cardstock);
+		 
+		 
+		 
+	 }
+	
+	
+	
 	
 	public static void cutting() {
 		System.out.println("Cards are cut");
