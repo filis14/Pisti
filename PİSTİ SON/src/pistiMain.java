@@ -41,10 +41,12 @@ public class pistiMain {
 
 		else if (choice == 2) {
 			System.out.println("The game is started..");
-			shuffle();
+			
 
 			Cards2.createCardstock();
 			Cards2.developerResult();
+			Cards.shuffle();
+			
 			Cards2.cutting();
 			Cards2.DealCard(3); // floor
 			for (int i = 1; i <= 6; i++) {
@@ -82,9 +84,6 @@ public class pistiMain {
 
 	}
 
-	public static void shuffle() {
-		System.out.println("Cards are shuffled and dealt..");
-
-	}
+	
 
 }
