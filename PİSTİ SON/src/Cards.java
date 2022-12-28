@@ -98,8 +98,11 @@ public class Cards {
 	
 	
 	public static void cutting() {
-		System.out.println("Cards are cut");
+		
 		System.out.println("----------------------");
+		System.out.println("Cards are cut");
+		
+		
 		Random r= new Random();
 		for(int i=0; i<26; i++) {
 			int deger= r.nextInt(26);
