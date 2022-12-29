@@ -36,6 +36,33 @@ public class pistiMain {
 							+ "card that has the same value as the top card on the board");
 
 			Choices();
+			int choice1 = sc.nextInt();
+			if (choice1 == 2) {
+				System.out.println("The game is started..");
+				
+				Cards2.createCardstock();
+				Cards2.developerResult();
+				Cards2.shuffle();
+
+				Cards2.cutting();
+				Cards2.DealCard(3); // floor
+				for (int i = 1; i <= 6; i++) {
+					System.out.println("_____________ ROUND " + i + " _____________");
+					Cards2.DealCard(2);
+					Cards2.DealCard(1);
+					for (int j = 0; j < 4; j++) {
+						Cards2.playCard(1); // ben
+						Cards2.playCard(2); // computer
+						// Cards2.developerResult();
+					}
+				}
+				// developerResult();
+
+				Cards2.gameFinished();
+				
+				
+
+			}
 
 		}
 
@@ -73,6 +100,33 @@ public class pistiMain {
 		else {
 			System.out.print("Plese enter a valid number!" + "1-2-3");
 			Choices();
+			int choice2 = sc.nextInt();
+			if (choice2 == 2) {
+				System.out.println("The game is started..");
+				
+				Cards2.createCardstock();
+				Cards2.developerResult();
+				Cards2.shuffle();
+
+				Cards2.cutting();
+				Cards2.DealCard(3); // floor
+				for (int i = 1; i <= 6; i++) {
+					System.out.println("_____________ ROUND " + i + " _____________");
+					Cards2.DealCard(2);
+					Cards2.DealCard(1);
+					for (int j = 0; j < 4; j++) {
+						Cards2.playCard(1); // ben
+						Cards2.playCard(2); // computer
+						// Cards2.developerResult();
+					}
+				}
+				// developerResult();
+
+				Cards2.gameFinished();
+				
+				
+
+			}
 		}
 
 	} // main
